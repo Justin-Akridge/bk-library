@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <button class="open-button" onclick="openForm()">Open Form</button>
+  
+  <div class="form-popup" id="myForm">
+    <form action="" class="form-container" id="form">
+      <div class="title">
+        <div>Book</div>
+        <button id="cancel-btn" onclick="closeForm()">X</button><br>
+      </div>
+
+      <label for="author"><b>Author</b></label>
+      <input id="author" type="text" placeholder="Enter Author" name="author" required>
+      <label for="title"><b>Title</b></label>
+      <input id="title" type="text" placeholder="Enter Title" name="title" required>
+
+      <label for="pages"><b># of pages</b></label>
+      <input id="pages" type="text" placeholder="Enter # of pages" name="pages" required>
+
+      <label for="read"><b>Have you read?</b></label><br>
+      <div>
+        <input type="radio" id="read" name="read" value="yes">
+        <label for="read">yes</label><br>
+        <input type="radio" id="!read" name="read" value="no">
+        <label for="!read">no</label><br>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+   </form>
+  </div>
+  <script src="app.js"></script>
+</body>
